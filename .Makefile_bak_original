@@ -1,0 +1,24 @@
+#Makefile
+.PHONY: clean
+#.SILENT:
+
+#VPATH=./header ./src ./obj
+VPATH= ./src ./obj
+CFLAGS= -g -Wall
+OBJ= get_mem.o isdigit.o strcspn.o strncpy.o strstr.o continue_choice.o \
+     inputfunc.o islower.o my_atoi.o strlen.o strrchr.o strtok.o isalnum.o \
+     isupper.o print_border.o strncat.o strrev.o isalpha.o strcasecmp.o	\
+     strncmp.o strspn.o validate_n.o main.o
+
+exe:	$(OBJ) 
+	gcc -o $@ $^ && mv *.o ./obj
+
+%.o:	%.c
+	gcc -c $(CFLAGS) -I ./header $^
+
+move:	
+	mv *.o ./obj
+
+clean: 
+	rm exe ./obj/*
+
