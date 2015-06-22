@@ -1,4 +1,5 @@
 #include "head.h"
+
 node_t *reverse_list_iterative (node_t *head)
 {
     node_t* prev   = NULL;
@@ -21,6 +22,7 @@ Explanation:
 1. http://stackoverflow.com/questions/2434411/linked-list-recursive-reverse
 2. http://stackoverflow.com/questions/14080758/reversing-a-linkedlist-recursively-in-c
 */
+
 node_t *reverse_list_recursive (node_t *head)
 { 
     /* Return  If List doesn't Exist or Empty */

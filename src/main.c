@@ -1,6 +1,7 @@
 #include "head.h"
 int main (void)
 {
+	system ("clear");
     node_t *head = NULL;
     int choice = 0;
 
