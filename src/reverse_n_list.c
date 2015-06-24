@@ -13,6 +13,13 @@ Ex: if List is: 1->2->3->4->5->6
 #include "head.h"
 node_t *reverse_n_list (node_t *head, int n)
 {
+    /* if List is empty */
+    if (NULL == head)
+    {
+	printf("List is empty\n");
+	return NULL;
+    }
+
     node_t *tmp, *prev   = NULL;
     node_t *current = head;
     node_t *next = NULL;

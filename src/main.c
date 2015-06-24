@@ -1,9 +1,11 @@
 #include "head.h"
 int main (void)
 {
-	system ("clear");
+    system ("clear");
     node_t *head = NULL;
     int choice = 0;
+
+    int n;
 
     while (TRUE)
     {
@@ -32,10 +34,10 @@ int main (void)
 		print_reverse(head);
 		printf("\n");
 		break;
-//	    case 6: 
-//		link_sort1(head);
-//		view_list(head);
-//		break;
+		//	    case 6: 
+		//		link_sort1(head);
+		//		view_list(head);
+		//		break;
 	    case 7:
 		head = reverse_list_iterative(head);
 		view_list(head);
@@ -50,6 +52,12 @@ int main (void)
 		break;
 	    case 10:
 		head = insert_sorted(head);
+		view_list(head);
+		break;
+	    case 11:
+		printf ("Enter the Value of n: ");
+		scanf ("%d", &n);
+		head = reverse_n_list(head, n);
 		view_list(head);
 		break;
 

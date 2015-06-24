@@ -24,6 +24,7 @@ OBJ1 := main.o \
 	print_reverse.o \
 	reverse_list.o \
 	swap_alternate.o \
+	reverse_n_list.o \
 	view_list.o
 
 

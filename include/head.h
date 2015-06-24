@@ -29,8 +29,10 @@ node_t *link_sort (node_t *);
 void view_list (node_t *);
 void print_reverse (node_t *);
 node_t *swap_alternate (node_t *head);
+
 node_t *reverse_list_iterative (node_t *head);
 node_t *reverse_list_recursive (node_t *head);
+node_t *reverse_n_list (node_t *head, int n);
 
 node_t *get_node(node_t *);
 void free_node(node_t *);
